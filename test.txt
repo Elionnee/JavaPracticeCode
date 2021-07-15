@@ -1,0 +1,464 @@
+static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.
+static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.
+
+
+static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.
+static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.
+
+static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.
+vstatic InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.static InputStream newInputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an input stream will apply.) If no options are specified, then the file is
+opened as if StandardOpenOption.READ were passed.
+Once opened, you can use any of the methods defined by InputStream. For
+example, you can use read( ) to read bytes from the file.
+The following program demonstrates the use of NIO-based stream I/O. It
+reworks the ShowFile program from Chapter 13 so that it uses NIO features to
+open the file and obtain a stream. As you can see, it is very similar to the
+original, except for the use of Path and newInputStream( ).
+Because the stream returned by newInputStream( ) is a normal stream, it
+can be used like any other stream. For example, you can wrap the stream inside
+a buffered stream, such as a BufferedInputStream, to provide buffering, as
+shown here:
+new BufferedInputStream(Files.newInputStream(Path.of(args[0])))
+Now, all reads will be automatically buffered.
+To open a file for output, use Files.newOutputStream( ). It is shown here:
+static OutputStream newOutputStream(Path path, OpenOption ... how)
+throws IOException
+Here, path specifies the file to open and how specifies how the file will be
+opened. It must be one or more of the values defined by
+StandardOpenOption, described earlier. (Of course, only those options that
+relate to an output stream will apply.) If no options are specified, then the file
+is opened as if StandardOpenOption.WRITE,
+StandardOpenOption.CREATE, and
+StandardOpenOption.TRUNCATE_EXISTING were passed.
+The methodology for using newOutputStream( ) is similar to that shown
+previously for newInputStream( ). Once opened, you can use any of the
+methods defined by OutputStream. For example, you can use write( ) to write
+bytes to the file. You can also wrap the stream inside a
+BufferedOutputStream to buffer the stream.
+The following program shows newOutputStream( ) in action. It writes the
+alphabet to a file called test.txt. Notice the use of buffered I/O.
